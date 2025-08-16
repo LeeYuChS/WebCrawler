@@ -1,5 +1,5 @@
 from fetch_data import fetch_data
-from plot import plot_country, plot_multi_life
+from plot import plot_country, plot_multi_life, plot_multi_gdp
 import pandas as pd
 
 website_life = {
@@ -50,6 +50,7 @@ def main():
     plot_country(df_Singapore, df_Singapore_GDP, "Singapore", "Singapore_GDP")
     
     plot_multi_life(df_life)
+    plot_multi_gdp(df_gdp)
 
 if __name__ == "__main__":
     main()
